@@ -1,0 +1,7 @@
+crewai
+autogen
+langchain
+openai
+fastapi
+uvicorn
+python-dotenv

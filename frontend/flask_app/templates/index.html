@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🤖 Multi-Agent AI System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .result-box { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 8px; }
+        h2 { color: #333; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h1>🤖 Multi-Agent AI Workflow</h1>
+    <form method="POST">
+        <input type="text" name="topic" placeholder="Enter topic" style="width:300px; padding:8px;">
+        <button type="submit">Run Agents</button>
+    </form>
+
+    {% if results %}
+        <div class="result-box">
+            <h2>🔍 Research Agent</h2>
+            <p>{{ results.research }}</p>
+        </div>
+        <div class="result-box">
+            <h2>✅ Qualify Agent</h2>
+            <p>{{ results.qualify }}</p>
+        </div>
+        <div class="result-box">
+            <h2>📢 Communication Agent</h2>
+            <p>{{ results.comms }}</p>
+        </div>
+        <div class="result-box">
+            <h2>📊 Final Report</h2>
+            <p>{{ results.report }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
