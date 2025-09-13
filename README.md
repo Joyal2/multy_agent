@@ -24,24 +24,6 @@ This project demonstrates how multiple specialized AI agents can collaborate to 
 - **Flask** (backend API)
 - **Pandas / Numpy** (data handling)
 
-## 📂 Project Structure
-
-multy_agent/
-├── agents/ # Multi-agent logic
-│ ├── communication_agent.py
-│ ├── qualify_agent.py
-│ ├── reporting_agent.py
-│ └── research_agent.py
-├── frontend/
-│ ├── flask_app/ # Flask backend
-│ │ ├── app.py
-│ │ └── templates/
-│ └── main_agent_ui.py # Streamlit frontend
-├── data/ # Example datasets
-│ └── leads.csv
-├── main.py # Entry point (can orchestrate agents)
-├── requirements.txt
-├── .env.example # Example environment variables
 
 
 
